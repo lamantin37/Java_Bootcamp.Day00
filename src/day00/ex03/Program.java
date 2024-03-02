@@ -25,7 +25,7 @@ public class Program {
         return minGrade;
     }
 
-    private static void drowGrades(int[] gradesArray){
+    private static void drawGrades(int[] gradesArray){
         int week_counter = 1;
         for (int grade : gradesArray) {
             if (grade != 0) {
@@ -59,7 +59,7 @@ public class Program {
             weekName = scanner.nextLine();
             ++week;
         }
-        drowGrades(gradeArray);
+        drawGrades(gradeArray);
 
         scanner.close();
     }

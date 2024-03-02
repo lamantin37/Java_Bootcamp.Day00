@@ -4,7 +4,7 @@ package day00.ex02;
 import java.util.Scanner;
 
 public class Program {
-    private static int sumOfDigids(int num) {
+    private static int sumOfDigits(int num) {
         int sumOfDigits = 0;
 
         String numAsString = String.valueOf(num);
@@ -34,7 +34,7 @@ public class Program {
         int coffee_requests = 0;
         
         while ((num = scanner.nextInt()) != 42) {
-            coffee_requests += checkPrime(sumOfDigids(num));
+            coffee_requests += checkPrime(sumOfDigits(num));
         }
 
         System.out.println("Count of coffee-request – " + coffee_requests);
